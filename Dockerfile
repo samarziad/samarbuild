@@ -17,6 +17,6 @@ COPY index.html /usr/share/nginx/html/index.html
 RUN sed -i "s/{NAME}/${name}/g" /usr/share/nginx/html/index.html 
 RUN echo "The nginx  is ${NGINX_VERSION}"
 RUN sed -i "s/{NGINX_Versin}/${NGINX_VERSION}/g" /usr/share/nginx/html/index.html
-RUN echo "The BUILDOS  is ${BUILDOS}"
-RUN sed -i "s/{BUILDOS}/${BUILDOS}/g" /usr/share/nginx/html/index.html  
+#RUN echo "The BUILDOS  is ${BUILDOS}"
+#RUN sed -i "s/{BUILDOS}/${BUILDOS}/g" /usr/share/nginx/html/index.html  
 #BUILDOS
