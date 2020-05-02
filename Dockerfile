@@ -5,6 +5,8 @@ FROM nginx:1.17.10
 
 RUN echo "The nginx  is ${NGINX_VERSION}"
 #Definr arg f0r name 
+
+ENV NAME NGINX_VERSION
 ARG NAME
 #ARG BUILDPLATFORM
 
