@@ -6,9 +6,11 @@ FROM nginx:1.17.10
 RUN echo "The nginx  is ${NGINX_VERSION}"
 #Definr arg f0r name 
 
-ENV NAME NGINX_VERSION
+
 ARG NAME
-#ARG BUILDPLATFORM
+ENV NAME NGINX_VERSION  BUILDPLATFORM
+
+ARG BUILDPLATFORM
 
 #relce index.html file 
 COPY index.html /usr/share/nginx/html/index.html 
@@ -20,6 +22,6 @@ RUN echo "The Name is ${NAME}"
 RUN sed -i "s/{NAME}/${NAME}/g" /usr/share/nginx/html/index.html 
 RUN echo "The nginx  is ${NGINX_VERSION}"
 RUN sed -i "s/{NGINX_Versin}/${NGINX_VERSION}/g" /usr/share/nginx/html/index.html
-#RUN echo "The BUILDOS  is ${BUILDOS}"
+RUN echo "The BUILDPLATFORM  is ${BUILDPLATFORM}"
 #RUN sed -i "s/{BUILDOS}/${BUILDOS}/g" /usr/share/nginx/html/index.html  
 #BUILDOS
