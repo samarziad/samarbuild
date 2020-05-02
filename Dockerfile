@@ -1,6 +1,6 @@
 ARG NGINX_VERSION 
 
-FROM nginx:$NGINX_VERSION
+FROM nginx:$(NGINX_VERSION)
 
 RUN echo "The nginx  is ${NGINX_VERSION}"
 #Definr arg f0r name 
