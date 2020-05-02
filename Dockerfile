@@ -5,11 +5,11 @@ FROM nginx:1.17.10
 
 RUN echo "The nginx  is ${NGINX_VERSION}"
 #Definr arg f0r name 
-
-
 ARG NAME
-ENV NAME "$NAME"  
-ENV NGINX_VERSION "$NGINX_VERSION" 
+
+
+ENV NAME ="$NAME"  \
+    NGINX_VERSION =1.17.10 
 
 ARG BUILDPLATFORM
 
