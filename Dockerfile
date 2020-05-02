@@ -8,7 +8,7 @@ RUN echo "The nginx  is ${NGINX_VERSION}"
 ARG NAME
 
 
-ENV NAME  $NAME
+ENV NAME samar 
 
 ARG BUILDPLATFORM
 
