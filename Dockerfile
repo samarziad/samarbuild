@@ -23,5 +23,5 @@ RUN sed -i "s/{NAME}/${NAME}/g" /usr/share/nginx/html/index.html
 RUN echo "The nginx  is ${NGINX_VERSION}"
 RUN sed -i "s/{NGINX_Versin}/${NGINX_VERSION}/g" /usr/share/nginx/html/index.html
 RUN echo "The BUILDPLATFORM  is ${BUILDPLATFORM}"
-#RUN sed -i "s/{BUILDOS}/${BUILDOS}/g" /usr/share/nginx/html/index.html  
+#RUN sed -i "s/{BUILDPLATFORM}/${BUILDPLATFORM}/g" /usr/share/nginx/html/index.html  
 #BUILDOS
